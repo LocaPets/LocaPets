@@ -49,6 +49,9 @@
                 <label class="btn btn-secondary">
                     <input type="radio" name="options" value="2" autocomplete="off"> Cámara trasera
                 </label>
+                <label class="btn btn-secondary">
+                    <input type="radio" name="options" value="3" autocomplete="off"> Cámara trasera
+                </label>
             </div>
 
         </div>
@@ -86,6 +89,12 @@
                     } else if ($(this).val() == 2) {
                         if (cameras[1] != "") {
                             scanner.start(cameras[1]);
+                        } else {
+                            alert('No Back camera found!');
+                        }
+                    }else if ($(this).val() == 3) {
+                        if (cameras[2] != "") {
+                            scanner.start(cameras[2]);
                         } else {
                             alert('No Back camera found!');
                         }
