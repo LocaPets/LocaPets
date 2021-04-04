@@ -52,9 +52,6 @@
                 <label class="btn btn-success">
                     <input type="radio" name="options" value="3" autocomplete="off"> Cámara 3
                 </label>
-                <label class="btn btn-danger">
-                    <input type="radio" name="options" value="4" autocomplete="off"> Cámara 4
-                </label>
             </div>
 
         </div>
@@ -98,12 +95,6 @@
                     }else if ($(this).val() == 3) {
                         if (cameras[2] != "") {
                             scanner.start(cameras[2]);
-                        } else {
-                            alert('No Back camera found!');
-                        }
-                    }else if ($(this).val() == 4) {
-                        if (cameras[3] != "") {
-                            scanner.start(cameras[3]);
                         } else {
                             alert('No Back camera found!');
                         }
